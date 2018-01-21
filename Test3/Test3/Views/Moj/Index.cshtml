@@ -1,0 +1,177 @@
+﻿@model Test3.data
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<style type="text/css">
+    /*N, NNE, NE, ENE, E, ESE, SE, SSE, S, SSW, SW, WSW, W, WNW, NW, NNW, VRB*/
+    .N {
+        background-image: url("../paper.jpg");
+    }
+    .NNE {
+        background-image: url("../paper.jpg");
+    }
+    .NE {
+        background-image: url("../paper.jpg");
+    }
+
+    .E{
+        background-color: green;
+    }
+    .ESE{
+        background-color: green;
+    }
+       .S {
+        background-color: red;
+    }
+    .SE {
+        background-image: 
+            
+            linear-gradient(to bottom, rgba(255,255,0,0.0), rgba(0,0,255,0.5)), 
+            url("../paper.jpg");
+        background-color: transparent;
+    }
+    .SSW {
+        background-color:red;
+    }
+    .SW {
+        background-color: red;
+    }
+    .WSW {
+        background-color: lime;
+    }
+    .W {
+        background-color: lime;
+    }
+    .WNW {
+        background-color: lime;
+    }
+    .NW {
+        background-color: lime;
+    }
+    .NNW {
+        background-color: lime;
+    }
+</style>
+
+<div class="@Model.metData.ElementAt(0).dd_icon">
+    <h4>data</h4>
+    <hr />
+
+    <table >
+        <tr>
+            <th>
+                Čas
+            </th>
+            <th>
+                Temperatura
+            </th>
+            <th></th>
+        </tr>
+        @foreach (var d in Model.metData)
+        {
+            @*<tr class="@d.dd_icon">*@
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => d.valid)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => d.dd_icon)
+            </td>
+
+
+            <td>
+                @Html.DisplayFor(modelItem => d.tavg) °C
+            </td>
+        </tr>
+        }
+    </table>
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.icon_url_base)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.icon_url_base)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.icon_format)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.icon_format)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.docs_url)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.docs_url)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.disclaimer_url)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.disclaimer_url)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.copyright_url)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.copyright_url)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.privacy_policy_url)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.privacy_policy_url)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.managing_editor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.managing_editor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.web_master)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.web_master)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.generator)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.generator)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.two_day_history_url)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.two_day_history_url)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
