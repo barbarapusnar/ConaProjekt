@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--L'utilizzo dei dati e delle informazioni qui disponibili è soggetto alle condizioni e limitazioni descritte nelle note legali, che l'utente implicitamente accetta (http://www.meteo.fvg.it/note-legali.php)-->
+<!--I dati real-time non possono essere ripubblicati (in qualsiasi formato o rielaborazione) prima di 24 ore dall'ora di riferimento del dato stesso, salvo eventuali deroghe preventivamente concordate con il titolare dei diritti.-->
+<data id="meteo.fvg_osservazioni_xml">
+  <language>italiano</language>
+  <credit>meteo.fvg</credit>
+  <credit_url>http://www.meteo.fvg.it</credit_url>
+  <credit_mail>support@meteo.fvg.it</credit_mail>
+  <suggested_pickup>30 minuti dopo l'ora</suggested_pickup>
+  <suggested_pickup_period>60</suggested_pickup_period>
+  <last_update>21/01/2018 07:33:02 UTC</last_update>
+  <meteo_data>
+    <observation_time>21/01/2018 07.00 UTC</observation_time>
+    <observation_date>21/01/2018</observation_date>
+    <observation_hour>07.00 UTC</observation_hour>
+    <station_id>MNF</station_id>
+    <station_name>Monfalcone</station_name>
+    <rr description="precipitazione" um="mm">0.0</rr>
+    <prec_type>0</prec_type>
+    <!--prec_type 0:nulla; 1:pioggia; 2:pioggia e neve; 3:neve-->
+    <t180 description="temperatura a 2m" um="°C">3.3</t180>
+    <rg description="radiazione" um="KJ/m^2">0</rg>
+    <cloudiness>1</cloudiness>
+    <!--cloudiness 0:n.d.; 1:sereno; 2:poco nuvoloso; 3:variabile; 4:nuvoloso; 5:coperto-->
+    <rh description="umidità media a 2m" um="%">92</rh>
+    <press description="pressione" um="hPa">1001.4</press>
+  </meteo_data>
+  <meteo_data_daily>
+    <summary_time>21/01/2018 07.00 UTC</summary_time>
+    <summary_date>21/01/2018</summary_date>
+    <summary_hour>07.00 UTC</summary_hour>
+    <station_id>MNF</station_id>
+    <station_name>Monfalcone</station_name>
+    <rr_cum description="precipitazione" um="mm">0.0</rr_cum>
+    <t180_min description="temperatura a 2m" um="°C">3.3</t180_min>
+    <t180_med description="temperatura a 2m" um="°C">5.4</t180_med>
+    <t180_max description="temperatura a 2m" um="°C">6.6</t180_max>
+    <rg_cum description="radiazione" um="KJ/m^2">0</rg_cum>
+    <cloudiness>0</cloudiness>
+    <!--cloudiness 0:n.d.; 1:sereno; 2:poco nuvoloso; 3:variabile; 4:nuvoloso; 5:coperto-->
+    <rh_med description="umidità media a 2m" um="%">83</rh_med>
+    <press_min description="pressione" um="hPa">1000.2</press_min>
+    <press_max description="pressione" um="hPa">1002.4</press_max>
+  </meteo_data_daily>
+</data>
