@@ -1,0 +1,248 @@
+<?xml version="1.0"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="data">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="language" type="xs:string" />
+        <xs:element minOccurs="0" name="credit" type="xs:string" />
+        <xs:element minOccurs="0" name="credit_url" type="xs:string" />
+        <xs:element minOccurs="0" name="image_url" type="xs:string" />
+        <xs:element minOccurs="0" name="suggested_pickup" type="xs:string" />
+        <xs:element minOccurs="0" name="suggested_pickup_period" type="xs:unsignedByte" />
+        <xs:element minOccurs="0" name="webcam_url_base" type="xs:string" />
+        <xs:element minOccurs="0" name="icon_url_base" type="xs:string" />
+        <xs:element minOccurs="0" name="icon_format" type="xs:string" />
+        <xs:element minOccurs="0" name="docs_url" type="xs:string" />
+        <xs:element minOccurs="0" name="disclaimer_url" type="xs:string" />
+        <xs:element minOccurs="0" name="copyright_url" type="xs:string" />
+        <xs:element minOccurs="0" name="privacy_policy_url" type="xs:string" />
+        <xs:element minOccurs="0" name="managing_editor" type="xs:string" />
+        <xs:element minOccurs="0" name="web_master" type="xs:string" />
+        <xs:element minOccurs="0" name="generator" type="xs:string" />
+        <xs:element minOccurs="0" name="meteosi_url" />
+        <xs:element minOccurs="0" name="two_day_history_url" type="xs:string" />
+        <xs:element minOccurs="0" maxOccurs="unbounded" name="metData">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="domain_title" type="xs:string" />
+              <xs:element minOccurs="0" name="domain_id" />
+              <xs:element minOccurs="0" name="domain_shortTitle" type="xs:string" />
+              <xs:element minOccurs="0" name="domain_longTitle" type="xs:string" />
+              <xs:element minOccurs="0" name="domain_meteosiId" type="xs:string" />
+              <xs:element minOccurs="0" name="domain_lat" type="xs:decimal" />
+              <xs:element minOccurs="0" name="domain_lon" type="xs:decimal" />
+              <xs:element minOccurs="0" name="domain_altitude" type="xs:decimal" />
+              <xs:element minOccurs="0" name="dataSource_title" type="xs:string" />
+              <xs:element minOccurs="0" name="sunrise" type="xs:string" />
+              <xs:element minOccurs="0" name="sunset" type="xs:string" />
+              <xs:element minOccurs="0" name="tsValid_issued" type="xs:string" />
+              <xs:element minOccurs="0" name="tsValid_issued_day" type="xs:string" />
+              <xs:element minOccurs="0" name="tsValid_issued_UTC" type="xs:string" />
+              <xs:element minOccurs="0" name="tsValid_issued_RFC822" type="xs:string" />
+              <xs:element minOccurs="0" name="tsUpdated" type="xs:string" />
+              <xs:element minOccurs="0" name="tsUpdated_day" type="xs:string" />
+              <xs:element minOccurs="0" name="tsUpdated_UTC" type="xs:string" />
+              <xs:element minOccurs="0" name="tsUpdated_RFC822" type="xs:string" />
+              <xs:element minOccurs="0" name="valid_day" type="xs:string" />
+              <xs:element minOccurs="0" name="valid" type="xs:string" />
+              <xs:element minOccurs="0" name="valid_UTC" type="xs:string" />
+              <xs:element minOccurs="0" name="validStart" type="xs:string" />
+              <xs:element minOccurs="0" name="validEnd" type="xs:string" />
+              <xs:element minOccurs="0" name="nn_var_desc" type="xs:string" />
+              <xs:element minOccurs="0" name="wwsyn_var_desc" type="xs:string" />
+              <xs:element minOccurs="0" name="nn_icon-wwsyn_icon" type="xs:string" />
+              <xs:element minOccurs="0" name="wwsyn_icon" type="xs:string" />
+              <xs:element minOccurs="0" name="t_var_desc" type="xs:string" />
+              <xs:element minOccurs="0" name="t_var_unit" type="xs:string" />
+              <xs:element minOccurs="0" name="t" type="xs:decimal" />
+              <xs:element minOccurs="0" name="t_state" type="xs:unsignedByte" />
+              <xs:element minOccurs="0" name="td_var_desc" type="xs:string" />
+              <xs:element minOccurs="0" name="td_var_unit" type="xs:string" />
+              <xs:element minOccurs="0" name="td" type="xs:decimal" />
+              <xs:element minOccurs="0" name="td_state" type="xs:unsignedByte" />
+              <xs:element minOccurs="0" name="tavg_var_desc" type="xs:string" />
+              <xs:element minOccurs="0" name="tavg_var_unit" type="xs:string" />
+              <xs:element minOccurs="0" name="tavg" type="xs:decimal" />
+              <xs:element minOccurs="0" name="tavg_state" type="xs:unsignedByte" />
+              <xs:element minOccurs="0" name="tx_var_desc" type="xs:string" />
+              <xs:element minOccurs="0" name="tx_var_unit" type="xs:string" />
+              <xs:element minOccurs="0" name="tx" type="xs:decimal" />
+              <xs:element minOccurs="0" name="tx_state" type="xs:unsignedByte" />
+              <xs:element minOccurs="0" name="tn_var_desc" type="xs:string" />
+              <xs:element minOccurs="0" name="tn_var_unit" type="xs:string" />
+              <xs:element minOccurs="0" name="tn" type="xs:decimal" />
+              <xs:element minOccurs="0" name="tn_state" type="xs:unsignedByte" />
+              <xs:element minOccurs="0" name="rh_var_desc" type="xs:string" />
+              <xs:element minOccurs="0" name="rh_var_unit" type="xs:string" />
+              <xs:element minOccurs="0" name="rh" type="xs:unsignedByte" />
+              <xs:element minOccurs="0" name="rh_state" type="xs:unsignedByte" />
+              <xs:element minOccurs="0" name="rhavg_var_desc" type="xs:string" />
+              <xs:element minOccurs="0" name="rhavg_var_unit" type="xs:string" />
+              <xs:element minOccurs="0" name="rhavg" type="xs:unsignedByte" />
+              <xs:element minOccurs="0" name="rhavg_state" type="xs:unsignedByte" />
+              <xs:element minOccurs="0" name="dd_var_desc" type="xs:string" />
+              <xs:element minOccurs="0" name="dd_var_unit" type="xs:string" />
+              <xs:element minOccurs="0" name="dd_val" type="xs:unsignedShort" />
+              <xs:element minOccurs="0" name="dd_shortText" type="xs:string" />
+              <xs:element minOccurs="0" name="dd_icon" type="xs:string" />
+              <xs:element minOccurs="0" name="dd_state" type="xs:unsignedByte" />
+              <xs:element minOccurs="0" name="ddavg_var_desc" type="xs:string" />
+              <xs:element minOccurs="0" name="ddavg_var_unit" type="xs:string" />
+              <xs:element minOccurs="0" name="ddavg_val" type="xs:unsignedShort" />
+              <xs:element minOccurs="0" name="ddavg_shortText" type="xs:string" />
+              <xs:element minOccurs="0" name="ddavg_longText" type="xs:string" />
+              <xs:element minOccurs="0" name="ddavg_icon" type="xs:string" />
+              <xs:element minOccurs="0" name="ddavg_state" type="xs:unsignedByte" />
+              <xs:element minOccurs="0" name="ddmax_var_desc" type="xs:string" />
+              <xs:element minOccurs="0" name="ddmax_var_unit" type="xs:string" />
+              <xs:element minOccurs="0" name="ddmax_val" type="xs:unsignedShort" />
+              <xs:element minOccurs="0" name="ddmax_shortText" type="xs:string" />
+              <xs:element minOccurs="0" name="ddmax_icon" type="xs:string" />
+              <xs:element minOccurs="0" name="ddmax_state" type="xs:unsignedByte" />
+              <xs:element minOccurs="0" name="ff_var_desc" type="xs:string" />
+              <xs:element minOccurs="0" name="ff_var_unit" type="xs:string" />
+              <xs:element minOccurs="0" name="ff_val" type="xs:decimal" />
+              <xs:element minOccurs="0" name="ff_val_kmh" type="xs:unsignedByte" />
+              <xs:element minOccurs="0" name="ff_state" type="xs:unsignedByte" />
+              <xs:element minOccurs="0" name="ffavg_var_desc" type="xs:string" />
+              <xs:element minOccurs="0" name="ffavg_var_unit" type="xs:string" />
+              <xs:element minOccurs="0" name="ffavg_val" type="xs:decimal" />
+              <xs:element minOccurs="0" name="ffavg_val_kmh" type="xs:unsignedByte" />
+              <xs:element minOccurs="0" name="ffavg_state" type="xs:unsignedByte" />
+              <xs:element minOccurs="0" name="ffmax_var_desc" type="xs:string" />
+              <xs:element minOccurs="0" name="ffmax_var_unit" type="xs:string" />
+              <xs:element minOccurs="0" name="ffmax_val" type="xs:decimal" />
+              <xs:element minOccurs="0" name="ffmax_val_kmh" type="xs:unsignedByte" />
+              <xs:element minOccurs="0" name="ffmax_state" type="xs:unsignedByte" />
+              <xs:element minOccurs="0" name="msl_var_desc" type="xs:string" />
+              <xs:element minOccurs="0" name="msl_var_unit" type="xs:string" />
+              <xs:element minOccurs="0" name="msl" />
+              <xs:element minOccurs="0" name="msl_state" />
+              <xs:element minOccurs="0" name="mslavg_var_desc" type="xs:string" />
+              <xs:element minOccurs="0" name="mslavg_var_unit" type="xs:string" />
+              <xs:element minOccurs="0" name="mslavg" />
+              <xs:element minOccurs="0" name="mslavg_state" />
+              <xs:element minOccurs="0" name="p_var_desc" type="xs:string" />
+              <xs:element minOccurs="0" name="p_var_unit" type="xs:string" />
+              <xs:element minOccurs="0" name="p" />
+              <xs:element minOccurs="0" name="p_state" />
+              <xs:element minOccurs="0" name="pavg_var_desc" type="xs:string" />
+              <xs:element minOccurs="0" name="pavg_var_unit" type="xs:string" />
+              <xs:element minOccurs="0" name="pavg" />
+              <xs:element minOccurs="0" name="pavg_state" />
+              <xs:element minOccurs="0" name="rr_var_desc" type="xs:string" />
+              <xs:element minOccurs="0" name="rr_var_unit" type="xs:string" />
+              <xs:element minOccurs="0" name="rr_val" type="xs:decimal" />
+              <xs:element minOccurs="0" name="rr_state" type="xs:unsignedByte" />
+              <xs:element minOccurs="0" name="snow_var_desc" type="xs:string" />
+              <xs:element minOccurs="0" name="snow_var_unit" type="xs:string" />
+              <xs:element minOccurs="0" name="snow" />
+              <xs:element minOccurs="0" name="snow_state" />
+              <xs:element minOccurs="0" name="tp_12h_acc_var_desc" type="xs:string" />
+              <xs:element minOccurs="0" name="tp_12h_acc_var_unit" type="xs:string" />
+              <xs:element minOccurs="0" name="tp_12h_acc" type="xs:decimal" />
+              <xs:element minOccurs="0" name="tp_12h_acc_state" type="xs:unsignedByte" />
+              <xs:element minOccurs="0" name="tp_24h_acc_var_desc" type="xs:string" />
+              <xs:element minOccurs="0" name="tp_24h_acc_var_unit" type="xs:string" />
+              <xs:element minOccurs="0" name="tp_24h_acc" type="xs:string" />
+              <xs:element minOccurs="0" name="tp_24h_acc_state" type="xs:string" />
+              <xs:element minOccurs="0" name="tw_var_desc" type="xs:string" />
+              <xs:element minOccurs="0" name="tw_var_unit" type="xs:string" />
+              <xs:element minOccurs="0" name="tw" />
+              <xs:element minOccurs="0" name="tw_state" />
+              <xs:element minOccurs="0" name="gSunRad_var_desc" type="xs:string" />
+              <xs:element minOccurs="0" name="gSunRad_var_unit" type="xs:string" />
+              <xs:element minOccurs="0" name="gSunRad" />
+              <xs:element minOccurs="0" name="gSunRad_state" />
+              <xs:element minOccurs="0" name="gSunRadavg_var_desc" type="xs:string" />
+              <xs:element minOccurs="0" name="gSunRadavg_var_unit" type="xs:string" />
+              <xs:element minOccurs="0" name="gSunRadavg" />
+              <xs:element minOccurs="0" name="gSunRadavg_state" />
+              <xs:element minOccurs="0" name="diffSunRad_var_desc" type="xs:string" />
+              <xs:element minOccurs="0" name="diffSunRad_var_unit" type="xs:string" />
+              <xs:element minOccurs="0" name="diffSunRad" />
+              <xs:element minOccurs="0" name="diffSunRad_state" />
+              <xs:element minOccurs="0" name="diffSunRadavg_var_desc" type="xs:string" />
+              <xs:element minOccurs="0" name="diffSunRadavg_var_unit" type="xs:string" />
+              <xs:element minOccurs="0" name="diffSunRadavg" />
+              <xs:element minOccurs="0" name="diffSunRadavg_state" />
+              <xs:element minOccurs="0" name="vis_desc" type="xs:string" />
+              <xs:element minOccurs="0" name="vis_val" />
+              <xs:element minOccurs="0" name="vis_unit" type="xs:string" />
+              <xs:element minOccurs="0" name="t_5_cm_var_desc" type="xs:string" />
+              <xs:element minOccurs="0" name="t_5_cm_var_unit" type="xs:string" />
+              <xs:element minOccurs="0" name="t_5_cm" />
+              <xs:element minOccurs="0" name="t_5_cm_state" />
+              <xs:element minOccurs="0" name="tavg_5_cm_var_desc" type="xs:string" />
+              <xs:element minOccurs="0" name="tavg_5_cm_var_unit" type="xs:string" />
+              <xs:element minOccurs="0" name="tavg_5_cm" />
+              <xs:element minOccurs="0" name="tavg_5_cm_state" />
+              <xs:element minOccurs="0" name="tg_5_cm_var_desc" type="xs:string" />
+              <xs:element minOccurs="0" name="tg_5_cm_var_unit" type="xs:string" />
+              <xs:element minOccurs="0" name="tg_5_cm" />
+              <xs:element minOccurs="0" name="tg_5_cm_state" />
+              <xs:element minOccurs="0" name="tgavg_5_cm_var_desc" type="xs:string" />
+              <xs:element minOccurs="0" name="tgavg_5_cm_var_unit" type="xs:string" />
+              <xs:element minOccurs="0" name="tgavg_5_cm" />
+              <xs:element minOccurs="0" name="tgavg_5_cm_state" />
+              <xs:element minOccurs="0" name="tg_10_cm_var_desc" type="xs:string" />
+              <xs:element minOccurs="0" name="tg_10_cm_var_unit" type="xs:string" />
+              <xs:element minOccurs="0" name="tg_10_cm" />
+              <xs:element minOccurs="0" name="tg_10_cm_state" />
+              <xs:element minOccurs="0" name="tgavg_10_cm_var_desc" type="xs:string" />
+              <xs:element minOccurs="0" name="tgavg_10_cm_var_unit" type="xs:string" />
+              <xs:element minOccurs="0" name="tgavg_10_cm" />
+              <xs:element minOccurs="0" name="tgavg_10_cm_state" />
+              <xs:element minOccurs="0" name="tg_20_cm_var_desc" type="xs:string" />
+              <xs:element minOccurs="0" name="tg_20_cm_var_unit" type="xs:string" />
+              <xs:element minOccurs="0" name="tg_20_cm" />
+              <xs:element minOccurs="0" name="tg_20_cm_state" />
+              <xs:element minOccurs="0" name="tgavg_20_cm_var_desc" type="xs:string" />
+              <xs:element minOccurs="0" name="tgavg_20_cm_var_unit" type="xs:string" />
+              <xs:element minOccurs="0" name="tgavg_20_cm" />
+              <xs:element minOccurs="0" name="tgavg_20_cm_state" />
+              <xs:element minOccurs="0" name="tg_30_cm_var_desc" type="xs:string" />
+              <xs:element minOccurs="0" name="tg_30_cm_var_unit" type="xs:string" />
+              <xs:element minOccurs="0" name="tg_30_cm" />
+              <xs:element minOccurs="0" name="tg_30_cm_state" />
+              <xs:element minOccurs="0" name="tgavg_30_cm_var_desc" type="xs:string" />
+              <xs:element minOccurs="0" name="tgavg_30_cm_var_unit" type="xs:string" />
+              <xs:element minOccurs="0" name="tgavg_30_cm" />
+              <xs:element minOccurs="0" name="tgavg_30_cm_state" />
+              <xs:element minOccurs="0" name="tg_50_cm_var_desc" type="xs:string" />
+              <xs:element minOccurs="0" name="tg_50_cm_var_unit" type="xs:string" />
+              <xs:element minOccurs="0" name="tg_50_cm" />
+              <xs:element minOccurs="0" name="tg_50_cm_state" />
+              <xs:element minOccurs="0" name="tgavg_50_cm_var_desc" type="xs:string" />
+              <xs:element minOccurs="0" name="tgavg_50_cm_var_unit" type="xs:string" />
+              <xs:element minOccurs="0" name="tgavg_50_cm" />
+              <xs:element minOccurs="0" name="tgavg_50_cm_state" />
+              <xs:element minOccurs="0" name="hhs_var_desc" type="xs:string" />
+              <xs:element minOccurs="0" name="hhs_var_unit" type="xs:string" />
+              <xs:element minOccurs="0" name="ns_var_desc" type="xs:string" />
+              <xs:element minOccurs="0" name="ns_var_unit" type="xs:string" />
+              <xs:element minOccurs="0" name="hhs1_val" />
+              <xs:element minOccurs="0" name="hhs1_state" />
+              <xs:element minOccurs="0" name="ns1_val" />
+              <xs:element minOccurs="0" name="ns1_state" />
+              <xs:element minOccurs="0" name="hhs2_val" />
+              <xs:element minOccurs="0" name="hhs2_state" />
+              <xs:element minOccurs="0" name="ns2_val" />
+              <xs:element minOccurs="0" name="ns2_state" />
+              <xs:element minOccurs="0" name="hhs3_val" />
+              <xs:element minOccurs="0" name="hhs3_state" />
+              <xs:element minOccurs="0" name="ns3_val" />
+              <xs:element minOccurs="0" name="ns3_state" />
+              <xs:element minOccurs="0" name="hhs4_val" />
+              <xs:element minOccurs="0" name="hhs4_state" />
+              <xs:element minOccurs="0" name="ns4_val" />
+              <xs:element minOccurs="0" name="ns4_state" />
+              <xs:element minOccurs="0" name="rrHh" type="xs:decimal" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="id" type="xs:string" use="optional" />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
